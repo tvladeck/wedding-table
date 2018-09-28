@@ -1,18 +1,5 @@
 
 
-strict_member(_, [_]) :- fail.
-
-strict_member(X, [Head|Tail]) :-
-    X = Head;
-    strict_member(X, Tail).
-
-
-
-not_member(_, []) :- !.
-
-not_member(X, [Head|Tail]) :-
-     X \= Head,
-    not_member(X, Tail).
 
 at_this_table(Person1, Person2, ThisTable) :-
     member(Person1, ThisTable),
