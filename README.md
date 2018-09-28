@@ -3,9 +3,9 @@ This prolog program solves the classic wedding table problem, where you have peo
 
 The entry point is `arrangment/4`, whose arguments are:
   - The list of lists of who is sitting at which table (this will be left specified as logic variables)
-  - The list of number of seats at each table, e.g. [3,3] for two tables each with three seats
-  - A list of pairwise pairings, e.g. [[Trevor, Tom], [Ellen, Sarah], [Trevor, Gabby]] which constrains that Trevor, Tom, and Gabby sit at the same table, and Ellen and Sarah sit at the same table
-  - A lis of pairwise exclusions, e.g. [[Ellen, Tom], [Sarah, Trevor]], which constrains that Ellen & Tom will sit at different tables and Sarah and Trevor will sit at different tables
+  - The list of number of seats at each table, e.g. `[3,3]` for two tables each with three seats
+  - A list of pairwise pairings, e.g. `[[Trevor, Tom], [Ellen, Sarah], [Trevor, Gabby]]` which constrains that Trevor, Tom, and Gabby sit at the same table, and Ellen and Sarah sit at the same table
+  - A lis of pairwise exclusions, e.g. `[[Ellen, Tom], [Sarah, Trevor]]`, which constrains that Ellen & Tom will sit at different tables and Sarah and Trevor will sit at different tables
 
 
 The way to run the program is to call `arrangement/4` with like so
